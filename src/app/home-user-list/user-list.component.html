@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>User List</h1>
+  <div class="users-list">
+    <div class="users-list-items" *ngFor="let user of users1">
+      <div>
+        <p routerLink="/user-details/{{ user.id }}">{{ user.first_name }} {{ user.last_name }}</p>
+      </div>
+    </div>
+    <div class="users-list-items" *ngFor="let user of users2">
+      <p routerLink="/user-details/{{ user.id }}">{{ user.first_name }} {{ user.last_name }}</p>
+    </div>
+  </div>
+</div>
