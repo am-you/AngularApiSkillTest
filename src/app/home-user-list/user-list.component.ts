@@ -15,8 +15,7 @@ export class UserListComponent implements OnInit {
   users1: User[];
   users2: User[];
 
-  constructor(private userService: UserService) {
-  }
+  constructor(private userService: UserService) {}
 
   ngOnInit() {
     this.getUsersPg1();

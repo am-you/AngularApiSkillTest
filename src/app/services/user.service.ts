@@ -20,7 +20,8 @@ export class UserService {
     private http: HttpClient) {
   }
 
-  /** GET all users from API */
+  /* GET all users from API */
+  /* First page*/
   getUsersPg1(): Observable<any> {
     const parameters = new HttpParams().set('page', '1');
 
@@ -30,7 +31,7 @@ export class UserService {
         catchError(this.handleError<User[]>('getUsers', []))
       );
   }
-
+  /* Second page*/
   getUsersPg2(): Observable<any> {
     const parameters2 = new HttpParams().set('page', '2');
 
@@ -40,6 +41,7 @@ export class UserService {
         catchError(this.handleError<User[]>('getUsers', []))
       );
   }
+  /* FORKJOIN à VOIR*/
 
   /** GET user by id. Will 404 if id not found */
   getUser(id): Observable<any> {
@@ -59,14 +61,11 @@ export class UserService {
    */
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
-
-      // TODO: send the error to remote logging infrastructure
       console.error(error); // log to console instead
 
-      // TODO: better job of transforming error for user consumption
-      console.log(`${operation} failed: ${error.message}`);
+      console.log(`${operation}`);
 
-      // Let the app keep running by returning an empty result.
+      // renvoyer un res vide pr que lapp tourne tjs.
       return of(result as T);
     };
   }

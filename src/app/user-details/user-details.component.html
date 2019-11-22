@@ -1,11 +1,32 @@
-<div class="container mt-5 mb-5">
+<div id="container">
   <h1>User Details</h1>
-  <ul>
-    <li>Id : {{ user.id }}</li>
-    <li>Firstname : {{ user.first_name }}</li>
-    <li>Lastname : {{ user.last_name }}</li>
-    <li>Email : {{ user.email }}</li>
-    <li>Photo : <img src="{{ user.avatar }}" [alt]="user.first_name"></li>
-  </ul>
-  <a class="btn btn-primary" [routerLink]="['/home']">Back To User Listing</a>
+  <img src="{{ user?.avatar }}" [alt]="user?.first_name" class="margin">
+  <! pour plus d'info sur Async Pipe et Elvis Operator voir https://hackernoon.com/the-angry-angular-asyncpipe-the-evil-elvis-operator-89293e37e04d >
+  <div class="details-card-columns users-list">
+    <div class="details-card users-list-items users-list-items-action">
+      <div class="details-card-body">
+        <h5 class="details-card-title">Id</h5>
+        <p class="details-card-text">{{ user?.id }}</p>
+      </div>
+    </div>
+    <div class="details-card users-list-items users-list-items-action">
+      <div class="details-card-body">
+        <h5 class="details-card-title">Firstname</h5>
+        <p class="details-card-text">{{ user?.first_name }}</p>
+      </div>
+    </div>
+    <div class="details-card users-list-items users-list-items-action">
+      <div class="details-card-body">
+        <h5 class="details-card-title">Lastname</h5>
+        <p class="details-card-text">{{ user?.last_name }}</p>
+      </div>
+    </div>
+    <div class="details-card users-list-items users-list-items-action">
+      <div class="details-card-body">
+        <h5 class="details-card-title">Email</h5>
+        <p class="details-card-text">{{ user?.email }}</p>
+      </div>
+    </div>
+  </div>
+  <button class="button" [routerLink]="['/home']">Back To User Listing</button>
 </div>
