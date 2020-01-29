@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ![](AngularSkillTest1.png)
 
-![](AngularSkillTest2.png)
+![](AngularSkilTest2.png)
