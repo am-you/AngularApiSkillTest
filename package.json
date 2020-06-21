@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "predeploy": "npm run build",
-    "deploy": "ng build --prod --base-href https://am-you.github.io/AngularSkillTest/ && angular-cli-ghpages --branch gh-pages"
+    "deploy": "ng build --prod --base-href https://am-you.github.io/AngularSkillTest/src && angular-cli-ghpages --branch gh-pages"
   },
   "private": true,
   "dependencies": {
