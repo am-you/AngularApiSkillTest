@@ -85,18 +85,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-troiscentsoixante-skill-test:build"
+            "browserTarget": "AngularApiSkillTest:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-troiscentsoixante-skill-test:build:production"
+              "browserTarget": "AngularApiSkillTest:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-troiscentsoixante-skill-test:build"
+            "browserTarget": "AngularApiSkillTest:build"
           }
         },
         "test": {
@@ -134,15 +134,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-troiscentsoixante-skill-test:serve"
+            "devServerTarget": "AngularApiSkillTest:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-troiscentsoixante-skill-test:serve:production"
+              "devServerTarget": "AngularApiSkillTest:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-troiscentsoixante-skill-test"
+  "defaultProject": "AngularApiSkillTest"
 }
