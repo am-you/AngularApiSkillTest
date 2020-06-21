@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "predeploy": "npm run build",
-    "deploy": "ng build --prod && angular-cli-ghpages --branch master"
+    "deploy": "ng build --prod && angular-cli-ghpages --branch gh-pages"
   },
   "private": true,
   "dependencies": {
@@ -48,5 +48,5 @@
     "tslint": "~5.15.0",
     "typescript": "~3.8.3"
   },
-  "homepage": "https://am-you.github.io/AngularApiSkillTest/"
+  "homepage": "https://am-you.github.io/AngularApiSkillTest/home"
 }
