@@ -1,9 +1,9 @@
 {
-  "name": "AngularSkillTest",
+  "name": "AngularApiSkillTest",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve AngularSkillTest",
+    "start": "ng serve AngularApiSkillTest",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -48,5 +48,5 @@
     "tslint": "~5.15.0",
     "typescript": "~3.8.3"
   },
-  "homepage": "https://am-you.github.io/AngularSkillTest/"
+  "homepage": "https://am-you.github.io/AngularApiSkillTest/"
 }
