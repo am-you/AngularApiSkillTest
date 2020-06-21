@@ -114,7 +114,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "js"
+            ]
           }
         },
         "lint": {
@@ -134,15 +136,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "AngularApiSkillTest:serve"
+            "devServerTarget": "AngularSkillTest:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "AngularApiSkillTest:serve:production"
+              "devServerTarget": "AngularSkillTest:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "AngularApiSkillTest"
+  "defaultProject": "AngularSkillTest"
 }
